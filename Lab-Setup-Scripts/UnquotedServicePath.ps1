@@ -55,7 +55,7 @@ takeown /f "C:\Program Files\Vulnerable Service1" /r /d y
 cmd /c icacls "C:\Program Files" /grant "$Domain\Domain Users:(W)"
 
 # Now the binary
-cmd /c icacls "C:\Program Files\Vulnerable Service1\Service Binary\Service 1.exe" /grant "$Domain\Domain Users:(F)"
+cmd /c icacls "C:\Program Files\Vulnerable Service1\Service Binary\Service1.exe" /grant "$Domain\Domain Users:(F)"
 
 
 Write-Host "[+] Installing the Service 1`n"
